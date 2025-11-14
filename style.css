@@ -58,8 +58,8 @@ footer {
 }
 .timeline-dot {
     position: absolute;
-    left: -10px;
-    top: 5px;
+    left: -32px;
+    top: 0px;
     height: 15px;
     width: 15px;
     background: #1b263b;
@@ -108,7 +108,7 @@ footer {
     .timeline-dot {
         height: 12px;
         width: 12px;
-        left: -8px;
+        left: -25px;
     }
     .timeline-content {
         padding: 12px 15px;
