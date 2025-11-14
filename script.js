@@ -13,3 +13,144 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
+
+/* --- Base Styling (unchanged) --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background: #1b263b;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+h2 {
+    margin-top: 0;
+    color: #0d1b2a;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d1b2a;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* --- Timeline Styling --- */
+.timeline {
+    position: relative;
+    margin: 30px 0;
+    padding-left: 20px;
+    border-left: 3px solid #1b263b;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    height: 15px;
+    width: 15px;
+    background: #1b263b;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.timeline-date {
+    font-weight: bold;
+    color: #0d1b2a;
+    margin-bottom: 5px;
+}
+.timeline-content {
+    background: #fff;
+    padding: 15px 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* --- Responsive Styling --- */
+@media (max-width: 900px) {
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    nav {
+        gap: 10px;
+    }
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    section {
+        margin: 15px;
+        padding: 18px;
+    }
+    .timeline {
+        padding-left: 15px;
+        border-left-width: 2px;
+    }
+    .timeline-dot {
+        height: 12px;
+        width: 12px;
+        left: -8px;
+    }
+    .timeline-content {
+        padding: 12px 15px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
